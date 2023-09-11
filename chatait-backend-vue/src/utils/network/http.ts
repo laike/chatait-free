@@ -40,7 +40,7 @@ export default {
     if (port !== '') {
       portStr = `:${port}`
     }
-    return `${protocol}://chat-backend-api.${domain}${portStr}`
+    return `${protocol}://127.0.0.1:${portStr}`
   },
   /**
    * get请求数据
