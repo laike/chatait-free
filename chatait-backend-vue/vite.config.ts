@@ -36,13 +36,16 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     },
 
     plugins: [vue(), vueJsx(), svgLoader()],
-
+    proxy: {
+      '/api': {
+           target: 'https://localhost:18002',
+           changeOrigin: true,
+           secure: false,      
+           ws: true,
+       }
+    },
     server: {
       port: 3002,
-      host: '0.0.0.0',
-      proxy: {
-        [VITE_API_URL_PREFIX]: 'http://localhost:18002/',
-      },
     },
   }
 }

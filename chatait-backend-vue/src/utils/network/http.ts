@@ -40,7 +40,7 @@ export default {
     if (port !== '') {
       portStr = `:${port}`
     }
-    return `${protocol}://localhost${portStr}`
+    return `${protocol}://localhost${portStr}/api`
   },
   /**
    * get请求数据
