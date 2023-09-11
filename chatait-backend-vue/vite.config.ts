@@ -42,7 +42,8 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         '/api': {
              target: 'http://localhost:18002',
              changeOrigin: true,
-             secure: false,      
+             secure: false,
+             rewrite: path => path.replace('/api', ''),   
          }
       },
     },
