@@ -40,7 +40,7 @@ export default {
     if (port !== '') {
       portStr = `:${port}`
     }
-    return `${protocol}://localhost:18002`
+    return `${protocol}://localhost${portStr}`
   },
   /**
    * get请求数据

@@ -39,10 +39,10 @@ export default ({ mode }: ConfigEnv): UserConfig => {
 
     server: {
       port: 3002,
-      // host: '0.0.0.0',
-      // proxy: {
-      //   [VITE_API_URL_PREFIX]: 'http://127.0.0.1:3000/',
-      // },
+      host: '0.0.0.0',
+      proxy: {
+        [VITE_API_URL_PREFIX]: 'http://localhost:18002/',
+      },
     },
   }
 }
