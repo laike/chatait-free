@@ -41,7 +41,6 @@ export default ({ mode }: ConfigEnv): UserConfig => {
            target: 'https://localhost:18002',
            changeOrigin: true,
            secure: false,      
-           ws: true,
        }
     },
     server: {
