@@ -40,7 +40,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       port: 3002,
       proxy: {
         '/api': {
-             target: 'https://localhost:18002',
+             target: 'http://localhost:18002',
              changeOrigin: true,
              secure: false,      
          }
